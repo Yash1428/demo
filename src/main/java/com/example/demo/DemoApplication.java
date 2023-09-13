@@ -15,4 +15,9 @@ public class DemoApplication {
 	public String hello(@RequestParam(value = "firstName") String firstName,  @RequestParam(value = "lastName") String lastName) {
 		return String.format("Hello %s!", firstName+" "+lastName);
 	}
+
+	@GetMapping("/address")
+	public String address(@RequestParam(value = "state") String state,  @RequestParam(value = "pincode") String pincode) {
+		return String.format("Address %s!", state+" "+pincode);
+	}
 }
