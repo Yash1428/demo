@@ -18,6 +18,6 @@ public class DemoApplication {
 
 	@GetMapping("/address")
 	public String address(@RequestParam(value = "state") String state,  @RequestParam(value = "pincode") String pincode) {
-		return String.format("Address %s!", state+" "+pincode);
+		return String.format("Address: %s!", state+" "+pincode);
 	}
 }
