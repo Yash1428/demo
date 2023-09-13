@@ -18,6 +18,6 @@ public class DemoApplication {
 
 	@GetMapping("/position")
 	public String position(@RequestParam(value = "role") String role) {
-		return String.format("Role %s!", role+" "+role);
+		return String.format("Role: %s!", role);
 	}
 }
