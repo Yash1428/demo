@@ -15,4 +15,9 @@ public class DemoApplication {
 	public String hello(@RequestParam(value = "firstName") String firstName,  @RequestParam(value = "lastName") String lastName) {
 		return String.format("Hello %s!", firstName+" "+lastName);
 	}
+
+	@GetMapping("/position")
+	public String position(@RequestParam(value = "role") String role) {
+		return String.format("Role %s!", role+" "+role);
+	}
 }
